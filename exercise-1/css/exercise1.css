@@ -1,0 +1,64 @@
+
+.user {
+    width: 100px;
+    height: 100px;
+}
+
+.showDetails{
+    background-color: aliceblue;
+    margin-top: 0.482rem;
+    color:#151718;
+    cursor:pointer;
+    border: solid blue 1px;
+    border-radius: 0.145rem;
+}
+
+.hide{
+    display:none;
+}
+
+ul#userListTemplate {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+ul#userListTemplate li {
+    flex: 0 0 23%;
+    list-style: none;
+    width: 23%;
+    margin: 1%;
+}
+
+.users-list {
+    display: flex;
+    border: solid black 1px;
+    border-radius: 0.245rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 8px;
+    /*flex-direction: column;*/
+}
+
+.users-list h5 {
+    margin: 11px 0 5px;
+    font-size: 16px;
+}
+
+.user_details span {
+    font-size: 12px;
+}
+
+@media(max-width: 767px){
+
+    ul#userListTemplate li {
+        flex: 0 0 48%;
+        width: 48%;
+    }
+}
+
+@media(max-width: 375px){
+    ul#userListTemplate li {
+        flex: 0 0 98%;
+        width: 98%;
+    }
+}
